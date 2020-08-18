@@ -34,6 +34,22 @@ $presence-away: rgb(250, 201, 20);
 $presence-busy: rgb(233, 0, 27);
 $presence-idle: rgb(172, 172, 172);
 
+// Psiphon colors
+ $psiphon-brand-color: #ff7941;
+ $psiphon-brand-color-dark: #ed5700;
+ $psiphon-info-color: #3274d9;
+ $psiphon-info-color-dark: #1f60c4;
+ $psiphon-gray1: #f7f8fa;
+ $psiphon-gray2: #dde4ed;
+ $psiphon-gray3: #d6d6d6;
+ $psiphon-gray4: #9e9e9e;
+ $psiphon-gray5: #52545c;
+ $psiphon-text1: #c7d0d9;
+ $psiphon-text2: $psiphon-gray4;
+ $psiphon-text3: #424345;
+ $psiphon-text4: #1e2028;
+ $psiphon-input: rgba(0, 0, 0, 0.6);
+
 /**
  * Toolbar
  */
@@ -161,18 +177,18 @@ $unsupportedDesktopBrowserTextFontSize: 21px;
 /**
  * The size of the default watermark.
  */
-$watermarkWidth: 186px;
-$watermarkHeight: 74px;
+$watermarkWidth: 256px;
+$watermarkHeight: 256px;
 
-$welcomePageWatermarkWidth: 186px;
-$welcomePageWatermarkHeight: 74px;
+$welcomePageWatermarkWidth: 128px;
+$welcomePageWatermarkHeight: 128px;
 
 /**
  * Welcome page variables.
  */
 $welcomePageDescriptionColor: #fff;
 $welcomePageFontFamily: inherit;
-$welcomePageBackground: linear-gradient(-90deg, #1251AE 0%, #0074FF 50%, #1251AE 100%);
+$welcomePageBackground: url(../images/grafana-psiphon-login.png);
 $welcomePageTitleColor: #fff;
 
 $welcomePageHeaderBackground: none;
@@ -203,6 +219,7 @@ $welcomePageHeaderTextDescriptionAlignSelf: inherit;
 
 $welcomePageEnterRoomDisplay: flex;
 $welcomePageEnterRoomWidth: 680px;
+$welcomePageEnterRoomMargin: 12px 0px 0px 0px;
 $welcomePageEnterRoomPadding: 25px 30px;
 $welcomePageEnterRoomBorderRadius: 0px;
 
@@ -213,7 +230,7 @@ $welcomePageEnterRoomInputContainerBorderImage: linear-gradient(to right, #dee1e
 
 $welcomePageEnterRoomTitleDisplay: inherit;
 
-$welcomePageTabContainerDisplay: flex;
+$welcomePageTabContainerDisplay: none;
 $welcomePageTabContentDisplay: inherit;
 $welcomePageTabButtonsDisplay: flex;
 $welcomePageTabDisplay: block;

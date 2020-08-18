@@ -4,7 +4,8 @@ body.welcome-page {
 }
 
 .welcome {
-    background-image: $welcomePageBackground;
+    background: $welcomePageBackground;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     font-family: $welcomePageFontFamily;
@@ -61,7 +62,8 @@ body.welcome-page {
             max-width: calc(100% - 40px);
             width: $welcomePageEnterRoomWidth;
             z-index: $zindex2;
-            background-color: #fff;
+            background-color: $psiphon-input;
+            margin: $welcomePageEnterRoomMargin;
             padding: $welcomePageEnterRoomPadding;
             border-radius: $welcomePageEnterRoomBorderRadius;
 
@@ -69,7 +71,7 @@ body.welcome-page {
                 width: 100%;
                 padding: $welcomePageEnterRoomInputContainerPadding;
                 text-align: left;
-                color: #253858;
+                color: #ffffff;
                 height: fit-content;
 
                 .enter-room-title {
@@ -83,6 +85,8 @@ body.welcome-page {
                     border-width: $welcomePageEnterRoomInputContainerBorderWidth;
                     border-style: $welcomePageEnterRoomInputContainerBorderStyle;
                     border-image: $welcomePageEnterRoomInputContainerBorderImage;
+                    background-color: transparent;
+                    color: inherit;
                     display: inline-block;
                     width: 100%;
                     font-size: 14px;
@@ -105,7 +109,7 @@ body.welcome-page {
                 }
 
                 ::placeholder {
-                    color: #253858;
+                    color: rgba(255, 255, 255, 0.6);
                 }
             }
 
@@ -179,19 +183,29 @@ body.welcome-page {
         }
     }
 
+    .welcome-banner {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
     .welcome-page-button {
         width: $welcomePageButtonWidth;
         min-width: $welcomePageButtonMinWidth;
         height: $welcomePageButtonHeight;
         font-size: $welcomePageButtonFontSize;
         font-weight: $welcomePageButtonFontWeight;
-        background: #0074E0;
+        background: linear-gradient($psiphon-brand-color 50%, $psiphon-brand-color-dark);
         border-radius: $welcomePageButtonBorderRadius;
         color: #FFFFFF;
         text-align: center;
         vertical-align: middle;
         line-height: $welcomePageButtonLineHeight;
         cursor: pointer;
+
+        &:hover {
+            background: $psiphon-brand-color;
+        }
     }
 
     .welcome-page-settings {
@@ -205,16 +219,15 @@ body.welcome-page {
             cursor: pointer;
             font-size: 32px;
         }
+
+        .jitsi-icon svg {
+            fill: $psiphon-gray5;
+        }
     }
 
-    .welcome-watermark {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-
-        .watermark.leftwatermark {
-            width: $welcomePageWatermarkWidth;
-            height: $welcomePageWatermarkHeight;
-        }
+    .watermark.leftwatermark {
+        padding-right: 20px;
+        width: $welcomePageWatermarkWidth;
+        height: $welcomePageWatermarkHeight;
     }
 }

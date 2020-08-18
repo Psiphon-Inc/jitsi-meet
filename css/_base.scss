@@ -123,10 +123,10 @@ form {
 
 .watermark {
     display: block;
-    position: absolute;
     top: 15;
     width: $watermarkWidth;
     height: $watermarkHeight;
+    background-image: url(../images/psiphon-logo-512.png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: $zindex2;

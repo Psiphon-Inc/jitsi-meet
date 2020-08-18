@@ -13,7 +13,7 @@ declare var interfaceConfig: Object;
  * @private
  */
 const _RIGHT_WATERMARK_STYLE = {
-    backgroundImage: 'url(images/rightwatermark.png)'
+    backgroundImage: 'url(images/psiphon-logo-512.png)'
 };
 
 /**
@@ -229,15 +229,9 @@ class Watermarks extends Component<Props, State> {
 
         if (this._canDisplayJitsiWatermark()) {
             const link = _customLogoLink || this.state.jitsiWatermarkLink;
-            const style = {
-                backgroundImage: `url(${_customLogoUrl || defaultJitsiLogoURL || interfaceConfig.DEFAULT_LOGO_URL})`,
-                maxWidth: 140,
-                maxHeight: 70
-            };
 
             reactElement = (<div
-                className = 'watermark leftwatermark'
-                style = { style } />);
+                className = 'watermark leftwatermark'/>);
 
             if (link) {
                 reactElement = (
@@ -266,7 +260,7 @@ class Watermarks extends Component<Props, State> {
             return (
                 <a
                     className = 'poweredby'
-                    href = 'http://jitsi.org'
+                    href = 'https://psiphon.ca/'
                     target = '_new'>
                     <span>{ t('poweredby') } jitsi.org</span>
                 </a>
