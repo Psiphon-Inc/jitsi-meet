@@ -180,7 +180,9 @@ $unsupportedDesktopBrowserTextFontSize: 21px;
 $watermarkWidth: 256px;
 $watermarkHeight: 256px;
 
-$welcomePageWatermarkWidth: 128px;
+$welcomePageWatermarkMargin: 20px;
+$welcomePageWatermarkMinWidth: 64px;
+$welcomePageWatermarkWidth: 10vw;
 $welcomePageWatermarkHeight: 128px;
 
 /**
@@ -189,7 +191,10 @@ $welcomePageWatermarkHeight: 128px;
 $welcomePageDescriptionColor: #fff;
 $welcomePageFontFamily: inherit;
 $welcomePageBackground: url(../images/grafana-psiphon-login.png);
+$welcomePageBackgroundSmall: url(../images/grafana-psiphon-login-small.png);
 $welcomePageTitleColor: #fff;
+$welcomePageMediaBreakpointMedium: 768px;
+$welcomePageMediaBreakpointSmall: 480px;
 
 $welcomePageHeaderBackground: none;
 $welcomePageHeaderBackgroundSmall: none;

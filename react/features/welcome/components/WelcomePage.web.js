@@ -182,8 +182,10 @@ class WelcomePage extends AbstractWelcomePage {
                     </div>
                     <div className = 'header-image' />
                     <div className = 'welcome-banner'>
-                        <Watermarks defaultJitsiLogoURL = { DEFAULT_WELCOME_PAGE_LOGO_URL } />
-                        <div>
+                        <div className='header-logo'>
+                            <Watermarks defaultJitsiLogoURL = { DEFAULT_WELCOME_PAGE_LOGO_URL } />
+                        </div>
+                        <div className='meeting-panel'>
                             <div id = 'enter_room'>
                                 <div className = 'enter-room-input-container'>
                                     <div className = 'enter-room-title'>

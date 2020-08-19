@@ -13,6 +13,11 @@ body.welcome-page {
     min-height: 100vh;
     position: relative;
 
+    @media (max-width: $welcomePageMediaBreakpointMedium) {
+        background-image: $welcomePageBackgroundSmall;
+        background-color: #FFFFFF;
+    }
+
     .header {
         background-image: $welcomePageHeaderBackground;
         background-position: $welcomePageHeaderBackgroundPosition;
@@ -60,18 +65,21 @@ body.welcome-page {
             display: $welcomePageEnterRoomDisplay;
             align-items: center;
             max-width: calc(100% - 40px);
-            width: $welcomePageEnterRoomWidth;
             z-index: $zindex2;
             background-color: $psiphon-input;
             margin: $welcomePageEnterRoomMargin;
             padding: $welcomePageEnterRoomPadding;
             border-radius: $welcomePageEnterRoomBorderRadius;
 
+            @media (max-width: $welcomePageMediaBreakpointSmall) {
+                margin: 0;
+            }
+
             .enter-room-input-container {
                 width: 100%;
                 padding: $welcomePageEnterRoomInputContainerPadding;
                 text-align: left;
-                color: #ffffff;
+                color: #FFFFFF;
                 height: fit-content;
 
                 .enter-room-title {
@@ -131,13 +139,22 @@ body.welcome-page {
             }
         }
 
+        .meeting-panel {
+            max-width: calc(100% - 40px);
+            width: 100%;
+
+            @media (max-width: $welcomePageMediaBreakpointSmall) {
+                max-width: 100%;
+            }
+        }
+
         .tab-container {
             font-size: 16px;
             position: relative;
             text-align: left;
             min-height: 354px;
             width: 710px;
-            background: #75A7E7;
+            background: #cacaca;
             display: $welcomePageTabContainerDisplay;
             flex-direction: column;
 
@@ -183,10 +200,21 @@ body.welcome-page {
         }
     }
 
+    .header-logo {
+        margin: 0 $welcomePageWatermarkMargin;
+        width: $welcomePageWatermarkWidth;
+    }
+
     .welcome-banner {
         display: flex;
         flex-direction: row;
         padding-top: 10px;
+        width: calc(100% - #{$welcomePageWatermarkWidth} - 56px); // 56px accounts for the icon size
+
+        @media (max-width: $welcomePageMediaBreakpointSmall) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     .welcome-page-button {
@@ -226,8 +254,8 @@ body.welcome-page {
     }
 
     .watermark.leftwatermark {
-        padding-right: 20px;
-        width: $welcomePageWatermarkWidth;
+        width: 100%;
+        min-width: $welcomePageWatermarkMinWidth;
         height: $welcomePageWatermarkHeight;
     }
 }
