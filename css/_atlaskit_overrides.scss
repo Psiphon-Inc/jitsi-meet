@@ -6,6 +6,51 @@
     bottom: calc(#{$newToolbarSizeWithPadding}) !important;
 }
 
+/* TODO: remove!! Ideally we shouldn't have to manually override these colours */
+.eoRGoR {
+    background-color: $psiphon-gray1 !important;
+    color: $psiphon-text3 !important;
+
+    .bdCvri {
+        & > span {
+            background-color: $psiphon-text3 !important;
+        }
+
+        & div {
+            color: $psiphon-text3 !important;
+        }
+
+        .iqNwPx /* active tab */ {
+            color: $psiphon-brand-color !important;
+
+            & span {
+                background-color: $psiphon-brand-color !important;
+            }
+        }
+    }
+
+    button.sc- {
+        &chPdSV {
+            color: $psiphon-text3 !important;
+
+            &.vvSok /* primary state */ {
+                background-color: $psiphon-brand-color !important;
+                color: $psiphon-gray1 !important;
+            }
+
+            &.jFZPyt /* primary hover state */ {
+                background-color: $psiphon-brand-color-dark !important;
+                color: $psiphon-gray1 !important;
+            }
+
+            &.gwSNcJ /* subtle hover state */ {
+                background-color: $psiphon-gray2 !important;
+            }
+
+        }
+    }
+}
+
 /**
  * Disable the slide-in animation for @atlaskit/flag due to the animation
  * repeating for each queued flag once it becomes the top flag.

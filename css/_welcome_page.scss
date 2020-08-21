@@ -223,7 +223,7 @@ body.welcome-page {
         height: $welcomePageButtonHeight;
         font-size: $welcomePageButtonFontSize;
         font-weight: $welcomePageButtonFontWeight;
-        background: linear-gradient($psiphon-brand-color 50%, $psiphon-brand-color-dark);
+        background: $psiphon-gradient;
         border-radius: $welcomePageButtonBorderRadius;
         color: #FFFFFF;
         text-align: center;
