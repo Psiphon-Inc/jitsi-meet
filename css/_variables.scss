@@ -45,6 +45,7 @@ $psiphon-gray2: #dde4ed;
 $psiphon-gray3: #d6d6d6;
 $psiphon-gray4: #9e9e9e;
 $psiphon-gray5: #52545c;
+$psiphon-gray-gradient: radial-gradient(50% 50% at 50% 50%, $psiphon-gray1 0%, $psiphon-gray3 100%), #FFFFFF;
 $psiphon-text1: #c7d0d9;
 $psiphon-text2: $psiphon-gray4;
 $psiphon-text3: #424345;
@@ -54,7 +55,7 @@ $psiphon-input: rgba(0, 0, 0, 0.6);
 /**
  * Toolbar
  */
-$newToolbarBackgroundColor: rgba(22, 38, 55, 0.8);
+$newToolbarBackgroundColor: $psiphon-gray1;
 $newToolbarButtonHoverColor: rgba(255, 255, 255, 0.15);
 $newToolbarButtonToggleColor: rgba(255, 255, 255, 0.2);
 $AOTToolbarButtonHoverColor: rgba(14, 20, 35, 0.6);
@@ -106,12 +107,13 @@ $modalTextColor: #333;
 /**
  * Chat
  */
-$chatActionsSeparatorColor: rgb(173, 105, 112);
-$chatHeaderBackgroundColor: rgba(42, 58, 75, 0.9);
+$chatActionsSeparatorColor: $psiphon-gray1;
+$chatHeaderBackgroundColor: $psiphon-gray2;
 $chatInputSeparatorColor: #A4B8D1;
-$chatLocalMessageBackgroundColor: rgb(4, 98, 178);
-$chatPrivateMessageBackgroundColor: rgb(153, 69, 77);
-$chatRemoteMessageBackgroundColor:  rgb(86, 101, 114);
+$chatLocalMessageBackgroundColor: $psiphon-info-color;
+$chatPrivateMessageBackgroundColor: $psiphon-brand-color-dark;
+$chatRemoteMessageBackgroundColor:  $psiphon-gray2;
+$chatRemoteMessageColor:  $psiphon-text3;
 $sidebarWidth: 375px;
 
  /**
@@ -178,8 +180,8 @@ $unsupportedDesktopBrowserTextFontSize: 21px;
 /**
  * The size of the default watermark.
  */
-$watermarkWidth: 256px;
-$watermarkHeight: 256px;
+$watermarkWidth: 64px;
+$watermarkHeight: 64px;
 
 $welcomePageWatermarkMargin: 20px;
 $welcomePageWatermarkMinWidth: 64px;

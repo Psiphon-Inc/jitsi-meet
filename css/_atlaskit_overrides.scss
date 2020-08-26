@@ -11,6 +11,11 @@
     background-color: $psiphon-gray1 !important;
     color: $psiphon-text3 !important;
 
+    label span {
+        color: $psiphon-text3 !important;
+    }
+
+    /* tab styling */
     .bdCvri {
         & > span {
             background-color: $psiphon-text3 !important;
@@ -29,24 +34,94 @@
         }
     }
 
-    button.sc- {
-        &chPdSV {
+    button.sc-chPdSV {
+        color: $psiphon-text3 !important;
+
+        /* button states */
+        &.vvSok /* primary */ {
+            background-color: $psiphon-brand-color !important;
+            color: $psiphon-gray1 !important;
+        }
+        &.jFZPyt /* primary hover */,
+        &.kBTUIO /* primary press */ {
+            background-color: $psiphon-brand-color-dark !important;
+            color: $psiphon-gray1 !important;
+        }
+
+        &.gwSNcJ /* subtle hover */ {
+            background-color: $psiphon-gray2 !important;
+        }
+
+        /* drop down button */
+        &.fCyuzu /* neutral, list collapsed */,
+        &.fVIYGn /* neutral, list open */ {
+            background-color: $psiphon-gray3 !important;
+        }
+        &.ikapcf /* list collapsed, hover */,
+        &.ivkQet /* list collapsed, press */,
+        &.fVhpUt /* list open, hover */,
+        &.ubgwW  /* list open, press */ {
+            background-color: $psiphon-info-color !important;
+            color: $psiphon-gray1 !important;
+        }
+    }
+
+    /* drop down list */
+    .cksvax {
+        background-color: $psiphon-gray3 !important;
+        border-color: $psiphon-gray1 !important;
+
+        .jXQlZM /* each item */ {
+            background-color: $psiphon-gray3 !important;
             color: $psiphon-text3 !important;
 
-            &.vvSok /* primary state */ {
-                background-color: $psiphon-brand-color !important;
+            &:hover {
+                background-color: $psiphon-info-color !important;
                 color: $psiphon-gray1 !important;
             }
+        }
+    }
 
-            &.jFZPyt /* primary hover state */ {
-                background-color: $psiphon-brand-color-dark !important;
-                color: $psiphon-gray1 !important;
+    /* text entry */
+    .emyNPN {
+        input {
+            color: $psiphon-text3 !important;
+        }
+
+        .jsYMHu /* neutral */ {
+            background-color: transparent !important;
+            border-color: $psiphon-gray3 !important;
+        }
+        .dEUJGG /* focused */ {
+            background-color: transparent !important;
+            border-color: $psiphon-brand-color !important;
+        }
+    }
+    .dvocAg,
+    .exHNhk {
+        background-color: $psiphon-gray1 !important;
+        border-color: $psiphon-gray3;
+        color: $psiphon-text3 !important;
+    }
+
+    /* checkbox */
+    .iVWXDg {
+        .bzvfYd span /* neutral */ {
+            color: $psiphon-gray3 !important;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .bzvfYd span {
+                color: $psiphon-info-color !important;
+
+                &.daPWMQ svg,
+                &.bINed svg,
+                &.lrBnp svg /* the checkmark */ {
+                    fill: $psiphon-gray1 !important;
+                }
             }
-
-            &.gwSNcJ /* subtle hover state */ {
-                background-color: $psiphon-gray2 !important;
-            }
-
         }
     }
 }

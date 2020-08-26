@@ -14,35 +14,35 @@ $sliderThumbBackground: #3572b0;
 /**
 * Buttons
 */
-$buttonBackground: #44A5FF;
-$buttonHoverBackground: #2c4062;
-$buttonBorder: transparent;
-$buttonHoverBorder: transparent;
-$buttonColor: #eceef1;
+$buttonBackground: #f7f8fa;
+$buttonHoverBackground: #dde4ed;
+$buttonBorder: $buttonHoverBackground;
+$buttonHoverBorder: #52545C;
+$buttonColor: #52545c;
 
-$buttonLightBackground: #f5f5f5;
-$buttonLightHoverBackground: #e9e9e9;
-$buttonLightBorder: #ccc;
-$buttonLightHoverBorder: #999;
+$buttonLightBackground: $buttonBackground;
+$buttonLightHoverBackground: $buttonHoverBackground;
+$buttonLightBorder: $buttonBorder;
+$buttonLightHoverBorder: $buttonHoverBorder;
 
 $buttonLinkBackground: transparent;
-$buttonLinkColor: #0090e8;
+$buttonLinkColor: #3274d9;
 
-$primaryButtonBackground: #3572b0;
-$primaryButtonHoverBackground: #2a67a5;
+$primaryButtonBackground: #3274d9;
+$primaryButtonHoverBackground: #1f60c4;
 $primaryButtonColor: $baseLight;
 $primaryButtonFontWeight: 400;
 
 $buttonShadowColor: #192d4f;
 
-$overlayButtonBg: #0074E0;
+$overlayButtonBg: #1f60c4;
 
 /**
 * Color variables
 **/
-$defaultBackground: #474747;
+$defaultBackground: #9e9e9e;
 $filmstripOnlyOverlayBg: #000;
-$reloadProgressBarBg: #0074E0;
+$reloadProgressBarBg: #1f60c4;
 
 /**
  * Dialog colors
@@ -71,8 +71,8 @@ $defaultDarkSelectionColor: #ccc;
 $buttonFontWeight: 400;
 $labelFontWeight: 400;
 $hintFontSize: em(13, 14);
-$linkFontColor: #3572b0;
-$linkHoverFontColor: darken(#3572b0, 10%);
+$linkFontColor: #3274d9;
+$linkHoverFontColor: darken(#3274d9, 10%);
 $dropdownColor: #333;
 $errorColor: #c61600;
 
@@ -85,7 +85,7 @@ $popoverFontColor: #ffffff !important;
 $popupMenuColor: #ffffff !important;
 $popupMenuHoverColor: #ffffff !important;
 $popupMenuHoverBackground: rgba(255, 255, 255, 0.1);
-$popupSliderColor: #0376da;
+$popupSliderColor: #3274d9;
 
 // Toolbar
 $secondaryToolbarBg: rgba(0, 0, 0, 0.5);

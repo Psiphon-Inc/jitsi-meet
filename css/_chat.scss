@@ -1,7 +1,7 @@
 #sideToolbarContainer {
     background-color: $newToolbarBackgroundColor;
     box-sizing: border-box;
-    color: #FFF;
+    color: $psiphon-text3;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -107,7 +107,7 @@
     .chat-close {
         align-items: center;
         bottom: 8px;
-        color: white;
+        color: $psiphon-text3;
         cursor: pointer;
         display: flex;
         font-size: 18px;
@@ -121,6 +121,10 @@
 
         &:hover {
             color: rgba(255, 255, 255, 0.8);
+        }
+
+        svg {
+            fill: $psiphon-text3;
         }
     }
 }
@@ -147,7 +151,7 @@
     border: 0px none;
     border-radius:0;
     box-shadow: none;
-    color: white;
+    color: $psiphon-text3;
     font-size: 15px;
     padding: 10px;
     overflow-y: auto;
@@ -190,7 +194,7 @@
     background-color: $chatRemoteMessageBackgroundColor;
     border-radius: 0px 6px 6px 6px;
     box-sizing: border-box;
-    color: white;
+    color: $chatRemoteMessageColor;
     margin-top: 3px;
     max-width: 100%;
     position: relative;
@@ -198,6 +202,7 @@
     &.localuser {
         background-color: $chatLocalMessageBackgroundColor;
         border-radius: 6px 0px 6px 6px;
+        color: white;
     }
 
     .usermessage {
@@ -260,7 +265,7 @@
 .smileys-panel {
     bottom: 100%;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, .6) !important;
+    background-color: $psiphon-input !important;
     height: auto;
     max-height: 0;
     overflow: hidden;
@@ -280,7 +285,6 @@
     }
 
     #smileysContainer {
-        background-color: $newToolbarBackgroundColor;
         border-bottom: 1px solid;
         border-top: 1px solid;
     }
@@ -317,6 +321,7 @@
         .chatmessage {
             background-color: $chatLocalMessageBackgroundColor;
             border-radius: 6px 0px 6px 6px;
+            color: white;
 
             &.privatemessage {
                 background-color: $chatPrivateMessageBackgroundColor;
@@ -372,10 +377,11 @@
         border-radius: 0px 6px 6px 6px;
         display: inline-block;
         margin-top: 3px;
-        color: white;
+        color: $chatRemoteMessageColor;
 
         &.privatemessage {
             background-color: $chatPrivateMessageBackgroundColor;
+            color: white;
         }
     }
 }
