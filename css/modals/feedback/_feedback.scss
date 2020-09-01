@@ -78,7 +78,7 @@
         }
 
         .star-btn {
-            color: inherit;
+            color: $psiphon-gray3;
             cursor: pointer;
             display: inline-block;
             font-size: 34px;
@@ -90,7 +90,7 @@
             &.active,
             &:hover,
             &.starHover {
-                color: #36B37E;
+                color: $psiphon-brand-color;
             };
 
         }

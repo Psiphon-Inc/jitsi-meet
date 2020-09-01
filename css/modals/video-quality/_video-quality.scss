@@ -26,7 +26,7 @@
             @mixin sliderTrackStyles() {
                 height: 15px;
                 border-radius: 10px;
-                background: rgb(14, 22, 36);
+                background: $psiphon-gray3;
             }
 
             &::-ms-track {
@@ -112,12 +112,12 @@
 
     &.video-not-supported {
         .video-quality-dialog-labels {
-            color: gray;
+            color: $psiphon-gray4;
         }
 
         .video-quality-dialog-slider {
             @mixin sliderTrackDisabledStyles() {
-                background: rgba(14, 22, 36, 0.1);
+                background: $psiphon-gray4;
             }
 
             &::-ms-track {

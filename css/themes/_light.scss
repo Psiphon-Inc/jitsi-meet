@@ -17,7 +17,7 @@ $sliderThumbBackground: #3572b0;
 $buttonBackground: #f7f8fa;
 $buttonHoverBackground: #dde4ed;
 $buttonBorder: $buttonHoverBackground;
-$buttonHoverBorder: #52545C;
+$buttonHoverBorder: $buttonHoverBackground;
 $buttonColor: #52545c;
 
 $buttonLightBackground: $buttonBackground;
@@ -28,9 +28,9 @@ $buttonLightHoverBorder: $buttonHoverBorder;
 $buttonLinkBackground: transparent;
 $buttonLinkColor: #3274d9;
 
-$primaryButtonBackground: #3274d9;
-$primaryButtonHoverBackground: #1f60c4;
-$primaryButtonColor: $baseLight;
+$primaryButtonBackground: #ff7941;
+$primaryButtonHoverBackground: #ed5700;
+$primaryButtonColor: #f7f8fa;
 $primaryButtonFontWeight: 400;
 
 $buttonShadowColor: #192d4f;
@@ -47,12 +47,12 @@ $reloadProgressBarBg: #1f60c4;
 /**
  * Dialog colors
  **/
-$auiDialogColor: #eceef1;
-$auiDialogBg: #253858;
-$auiDialogContentBg: #344563;
-$auiBorderColor: #253858;
+$auiDialogColor: #424345;
+$auiDialogBg: #f7f8fa;
+$auiDialogContentBg: #f7f8fa;
+$auiBorderColor: #f7f8fa;
 $dialogTitleFontWeight: 400;
-$dialogErrorText: #344563;
+$dialogErrorText: #ed5700;
 
 /**
 * Inlay colors
@@ -112,4 +112,4 @@ $selectActiveItemBg: darken($controlBackground, 20%);
 /**
  * TODO: Replace by themed component.
  */
-$videoQualityActive: #4C9AFF;
+$videoQualityActive: #3274d9;

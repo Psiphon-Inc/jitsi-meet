@@ -95,7 +95,13 @@
 
     .input-control {
         background-color: $auiDialogContentBg;
+        border-color: $psiphon-gray3;
+        border-style: solid;
         color: $auiDialogColor;
+
+        &:focus {
+            border-color: $psiphon-brand-color;
+        }
     }
 
     .form-control:not(:last-child) {

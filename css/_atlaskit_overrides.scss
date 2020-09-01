@@ -38,16 +38,20 @@
         color: $psiphon-text3 !important;
 
         /* button states */
+        &.fPYlda,
         &.vvSok /* primary */ {
             background-color: $psiphon-brand-color !important;
             color: $psiphon-gray1 !important;
         }
+        &.faSYQx /* hover */,
+        &.cBUoMS /* press */,
         &.jFZPyt /* primary hover */,
         &.kBTUIO /* primary press */ {
             background-color: $psiphon-brand-color-dark !important;
             color: $psiphon-gray1 !important;
         }
 
+        &.ghXWmQ /* press */,
         &.gwSNcJ /* subtle hover */ {
             background-color: $psiphon-gray2 !important;
         }
@@ -80,6 +84,18 @@
                 color: $psiphon-gray1 !important;
             }
         }
+        .hWFSra /* each item */ {
+            color: $psiphon-text3 !important;
+
+            .jADFbf /* inner text */ {
+                color: inherit !important;
+            }
+
+            &:hover {
+                background-color: $psiphon-info-color !important;
+                color: $psiphon-gray1 !important;
+            }
+        }
     }
 
     /* text entry */
@@ -100,7 +116,33 @@
     .dvocAg,
     .exHNhk {
         background-color: $psiphon-gray1 !important;
-        border-color: $psiphon-gray3;
+        border-color: $psiphon-gray3 !important;
+        color: $psiphon-text3 !important;
+    }
+    .OZnnZ,
+    .hiHxeB {
+        background-color: $psiphon-gray1 !important;
+        border-color: $psiphon-gray3 !important;
+        color: $psiphon-text3 !important;
+
+        .gDgjow /* text widget inside the text entry */ {
+            background-color: $psiphon-input !important;
+            color: $psiphon-gray1 !important;
+
+            svg > path {
+                fill: $psiphon-gray1 !important;
+            }
+        }
+        .hmpyVI /* text widget inside the text entry, hover */ {
+            background-color: $psiphon-brand-color !important;
+            color: $psiphon-gray1 !important;
+
+            svg > path {
+                fill: $psiphon-gray1 !important;
+            }
+        }
+    }
+    .fHtceQ  {
         color: $psiphon-text3 !important;
     }
 
@@ -123,6 +165,40 @@
                 }
             }
         }
+    }
+
+    /* slider */
+    .gCUVAL {
+        .jieXsu /* span unfocused, off */,
+        .ioMZrV /* span focused, off */ {
+            background-color: $psiphon-gray3 !important;
+    
+        }
+        .gaHGzX /* span unfocused, on */,
+        .ixjmHg /* span focused, on */ {
+            background-color: $psiphon-brand-color !important;
+        }
+
+        .hzRJjY /* knob, off */,
+        .glFAYm /* knob, on */ {
+            background-color: $psiphon-gray1 !important;
+        }
+    }
+}
+
+/* chat pop ups */
+.sc-bZQynM {
+    background-color: $psiphon-gray5 !important;
+    color: $psiphon-gray1 !important;
+
+    .cmRPpI /* inner text */,
+    .hgVmZz /* inner text */,
+    button.RycQf /* close button */ {
+        color: inherit !important;
+    }
+
+    .dhpAMz button /* action button */ {
+        color: $psiphon-brand-color !important;
     }
 }
 

@@ -20,7 +20,7 @@
 
     .action-btn {
         border-radius: 3px;
-        color: #fff;
+        color: $psiphon-gray1;
         cursor: pointer;
         display: inline-block;
         font-size: 15px;
@@ -32,13 +32,13 @@
         width: 286px;
 
         &.primary {
-            background: #0376DA;
-            border: 1px solid #0376DA;
+            background: $psiphon-gradient;
+            border: 1px solid $psiphon-brand-color-dark;
         }
 
         &.secondary {
             background: transparent;
-            border: 1px solid #5E6D7A;
+            border: 1px solid $psiphon-gray2;
         }
 
         &.text {
@@ -49,25 +49,25 @@
         }
 
         &.disabled {
-            background: #5E6D7A;
-            border: 1px solid #5E6D7A;
-            color: #AFB6BC;
+            background: $psiphon-gray4;
+            border: 1px solid $psiphon-text3;
+            color: $psiphon-text3;
             cursor: initial;
 
             .icon {
                 & > svg {
-                    fill: #AFB6BC;
+                    fill: $psiphon-text3;
                 }
             }
 
             .options {
-                border-left: 1px solid #AFB6BC;
+                border-left: 1px solid $psiphon-gray5;
             }
         }
 
         .options {
             align-items: center;
-            border-left: 1px solid #fff;
+            border-left: 1px solid $psiphon-gray1;
             display: flex;
             height: 100%;
             justify-content: center;
@@ -92,7 +92,7 @@
         z-index: $toolbarZ + 2;
 
         .title {
-            color: #fff;
+            color: $psiphon-gray1;
             font-size: 24px;
             line-height: 32px;
             margin-bottom: 16px;
@@ -101,7 +101,7 @@
         .copy-meeting {
             align-items: center;
             cursor: pointer;
-            color: #fff;
+            color: $psiphon-gray1;
             display: flex;
             flex-direction: row;
             font-size: 15px;
@@ -115,12 +115,12 @@
                 padding: 8px 10px;
 
                 &:hover {
-                    background: #1C2025;
+                    background: $psiphon-text4;
                     border-radius: 4px;
                 }
 
                 &.done {
-                    background: #31B76A;
+                    background: $psiphon-input;
                 }
 
                 .jitsi-icon {
@@ -236,7 +236,7 @@
 .toggle-button {
     border-radius: 3px;
     cursor: pointer;
-    color: #fff;
+    color: $psiphon-gray1;
     font-size: 13px;
     height: 40px;
     margin: 0 auto;
@@ -249,9 +249,9 @@
     }
 
     &:hover {
-        background: #1C2025;
+        background: $psiphon-text4;
 
-        @include icon-container(#A4B8D1, #1C2025);
+        @include icon-container(#A4B8D1, $psiphon-text4);
     }
 
     &-container {
@@ -268,14 +268,14 @@
     }
 
     &--toggled {
-        background: #75757A;
+        background: $psiphon-gray4;
 
         &:hover {
-            background: #75757A;
+            background: $psiphon-gray4;
 
-            @include icon-container(#A4B8D1, #75757A);
+            @include icon-container(#A4B8D1, $psiphon-gray4);
         }
 
-        @include icon-container(#A4B8D1, #75757A);
+        @include icon-container(#A4B8D1, $psiphon-gray4);
     }
 }

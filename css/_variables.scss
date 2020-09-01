@@ -45,7 +45,7 @@ $psiphon-gray2: #dde4ed;
 $psiphon-gray3: #d6d6d6;
 $psiphon-gray4: #9e9e9e;
 $psiphon-gray5: #52545c;
-$psiphon-gray-gradient: radial-gradient(50% 50% at 50% 50%, $psiphon-gray1 0%, $psiphon-gray3 100%), #FFFFFF;
+$psiphon-gray-gradient: radial-gradient(50% 50% at 50% 50%, $psiphon-gray4 0%, $psiphon-gray5 100%), $psiphon-gray5;
 $psiphon-text1: #c7d0d9;
 $psiphon-text2: $psiphon-gray4;
 $psiphon-text3: #424345;
@@ -56,8 +56,9 @@ $psiphon-input: rgba(0, 0, 0, 0.6);
  * Toolbar
  */
 $newToolbarBackgroundColor: $psiphon-gray1;
-$newToolbarButtonHoverColor: rgba(255, 255, 255, 0.15);
+$newToolbarButtonHoverColor: rgba(247, 248, 250, 0.4); // $psiphon-gray1 with opacity
 $newToolbarButtonToggleColor: rgba(255, 255, 255, 0.2);
+$newToolbarButtonToggleHoverColor: rgba(247, 248, 250, 0.5);
 $AOTToolbarButtonHoverColor: rgba(14, 20, 35, 0.6);
 $AOTToolbarButtonToggleColor: rgba(14, 20, 35, 1);
 $newToolbarFontSize: 24px;
@@ -65,10 +66,10 @@ $newToolbarHangupFontSize: 32px;
 $newToolbarSize: 40px;
 $newToolbarSizeWithPadding: calc(#{$newToolbarSize} + 24px);
 $toolbarTitleFontSize: 19px;
-$overflowMenuBG: initial;
-$overflowMenuItemHoverBG: #313D52;
-$overflowMenuItemHoverColor: #B8C7E0;
-$overflowMenuItemColor: #B8C7E0;
+$overflowMenuBG: $psiphon-gray1;
+$overflowMenuItemHoverBG: $psiphon-gray2;
+$overflowMenuItemHoverColor: $psiphon-text3;
+$overflowMenuItemColor: $psiphon-text3;
 
 /**
  * Video layout
@@ -100,16 +101,16 @@ $feedbackInputPlaceholderColor: #777;
  * Modals
  */
 $modalButtonFontSize: 14px;
-$modalMockAKInputBackground: #fafbfc;
-$modalMockAKInputBorder: 1px solid #f4f5f7;
-$modalTextColor: #333;
+$modalMockAKInputBackground: #fafbfc; // $psiphon-gray1?
+$modalMockAKInputBorder: 1px solid #f4f5f7; // gray 2?
+$modalTextColor: #333; // text3?
 
 /**
  * Chat
  */
 $chatActionsSeparatorColor: $psiphon-gray1;
 $chatHeaderBackgroundColor: $psiphon-gray2;
-$chatInputSeparatorColor: #A4B8D1;
+$chatInputSeparatorColor: $psiphon-text3;
 $chatLocalMessageBackgroundColor: $psiphon-info-color;
 $chatPrivateMessageBackgroundColor: $psiphon-brand-color-dark;
 $chatRemoteMessageBackgroundColor:  $psiphon-gray2;

@@ -7,16 +7,16 @@
     width: calc(100% - 24px);
     height: 24px;
 
-    background: #0376DA;
+    background: $psiphon-brand-color;
     border-radius: 4px;
     cursor: pointer;
 
     &:hover {
-        background: #278ADF;
-        font-weight: 600;
+        background: $psiphon-brand-color-dark;
     }
 
     &-content {
+        color: $psiphon-gray1;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -29,10 +29,10 @@
     }
 
     &.clicked {
-        background: #31B76A;
+        background: $psiphon-input;
     }
 
     & > div > svg > path {
-        fill: #fff;
+        fill: $psiphon-gray1;
     }
 }

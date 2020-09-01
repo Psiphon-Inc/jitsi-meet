@@ -210,8 +210,10 @@
                     max-height: 24px;
                 }
 
-                svg {
-                    fill: #B8C7E0 !important;
+                svg,
+                svg g,
+                svg path {
+                    fill: $psiphon-gray5 !important;
                 }
             }
 
@@ -259,8 +261,15 @@
             justify-content: center;
             width: $newToolbarSize;
 
-            &:hover, &.toggled {
+            &:hover {
                 background: $newToolbarButtonHoverColor;
+            }
+            &.toggled {
+                background: $newToolbarButtonToggleColor;
+
+                &:hover {
+                    background: $newToolbarButtonToggleHoverColor;
+                }
             }
     
             &.disabled {

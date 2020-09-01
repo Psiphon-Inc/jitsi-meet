@@ -26,14 +26,14 @@
         width: fit-content;
         width: -moz-fit-content;
         height: 24px;
-        background: #0376DA;
+        background: $psiphon-info-color-dark;
         border-radius: 3px;
         font-size: 14px;
         line-height: 24px;
         cursor: pointer;
 
         &:hover {
-            background: #278ADF;
+            background: $psiphon-info-color;
         }
 
         &-text {
@@ -43,7 +43,7 @@
         }
     }
     &-dialog {
-        color: #fff;
+        color: $psiphon-text3;
         font-size: 15px;
         line-height: 24px;
 
@@ -52,14 +52,14 @@
             justify-content: space-between;
             margin: 16px 16px 24px;
             width: calc(100% - 32px);
-            color: #fff;
+            color: $psiphon-text3;
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
 
             & > div > svg {
                 cursor: pointer;
-                fill: #A4B8D1;
+                fill: $psiphon-gray5;
             }
         }
 
@@ -68,7 +68,7 @@
             padding: 0 20px;
             width: 100%;
             height: 1px;
-            background: #5E6D7A;
+            background: $psiphon-gray2;
         }
 
         &.email-container {
@@ -80,13 +80,17 @@
             width: calc(100% - 26px);
             height: 22px;
 
-            background: #2A3A4B;
-            border: 1px solid #5E6D7A;
+            background: $psiphon-gray2;
+            border: 1px solid $psiphon-gray2;
             border-radius: 3px;
             cursor: pointer;
 
             &.active {
                 border-radius: 3px 3px 0 0;
+            }
+
+            .jitsi-icon svg path {
+                fill: $psiphon-text3;
             }
         }
 
@@ -98,8 +102,8 @@
                 width: calc(100% - 26px);
                 padding: 8px 8px 8px 16px;
 
-                background: #2A3A4B;
-                border: 1px solid #5E6D7A;
+                background: $psiphon-gray1;
+                border: 1px solid $psiphon-gray2;
                 border-top: none;
                 border-radius: 0 0 3px 3px;
 
@@ -114,22 +118,23 @@
                 }
     
                 &:hover > div:hover {
-                    background-color: rgba(255, 255, 255, 0.2);
+                    background-color: $psiphon-gray2;
                 }
     
                 & > :not(:last-child) {
                     margin-right: 16px;
                 }
 
+                .jitsi-icon > svg > path,
                 .copy-invite-icon > div > svg > path {
-                    fill: #A4B8D1;
+                    fill: $psiphon-text3;
                 }
             }
         }
 
         &.dial-in-display {
             .info-label {
-                color: #A4B8D1;
+                color: $psiphon-info-color;
             }
 
             .dial-in-copy {
@@ -137,6 +142,10 @@
                 vertical-align: middle;
                 margin-left: 21px;
                 cursor: pointer;
+
+                .jitsi-icon svg {
+                    fill: $psiphon-brand-color;
+                }
             }
         }
 
@@ -158,13 +167,22 @@
             &-cancel {
                 margin-right: 16px;
                 padding: 7px 15px;
-                background: #2A3A4B;
-                border: 1px solid #5E6D7A;
+                background: $psiphon-gray1;
+                border: 1px solid $psiphon-gray2;
+
+                &:hover {
+                    background: $psiphon-gray2;
+                }
             }
 
             &-add {
                 padding: 8px 16px;
-                background: #0376DA;
+                background: $psiphon-info-color;
+                color: $psiphon-gray1;
+
+                &:hover {
+                    background: $psiphon-info-color-dark;
+                }
             }
 
             &.disabled {
@@ -183,8 +201,8 @@
             width: calc(100% - 26px);
             height: 22px;
 
-            background: #2A3A4B;
-            border: 1px solid #5E6D7A;
+            background: $psiphon-gray1;
+            border: 1px solid $psiphon-gray2;
             border-radius: 3px;
             cursor: pointer;
 
@@ -204,12 +222,11 @@
             }
 
             &.clicked {
-                background: #31B76A;
-                border: 1px solid #31B76A;
+                background: $psiphon-input;
             }
 
             & > div > svg > path {
-                fill: #fff;
+                fill: $psiphon-gray1;
             }
         }
     }
