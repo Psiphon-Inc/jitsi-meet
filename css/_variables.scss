@@ -101,9 +101,9 @@ $feedbackInputPlaceholderColor: #777;
  * Modals
  */
 $modalButtonFontSize: 14px;
-$modalMockAKInputBackground: #fafbfc; // $psiphon-gray1?
-$modalMockAKInputBorder: 1px solid #f4f5f7; // gray 2?
-$modalTextColor: #333; // text3?
+$modalMockAKInputBackground: $psiphon-gray1;
+$modalMockAKInputBorder: 1px solid $psiphon-gray2;
+$modalTextColor: $psiphon-text3;
 
 /**
  * Chat

@@ -51,8 +51,8 @@
             color: $psiphon-gray1 !important;
         }
 
-        &.ghXWmQ /* press */,
-        &.gwSNcJ /* subtle hover */ {
+        &.gwSNcJ /* subtle hover */,
+        &.ghXWmQ /* press */ {
             background-color: $psiphon-gray2 !important;
         }
 
@@ -61,10 +61,10 @@
         &.fVIYGn /* neutral, list open */ {
             background-color: $psiphon-gray3 !important;
         }
-        &.ikapcf /* list collapsed, hover */,
-        &.ivkQet /* list collapsed, press */,
-        &.fVhpUt /* list open, hover */,
-        &.ubgwW  /* list open, press */ {
+        &.ikapcf /* hover, list collapsed */,
+        &.ivkQet /* press, list collapsed */,
+        &.fVhpUt /* hover, list open */,
+        &.ubgwW  /* press, list open */ {
             background-color: $psiphon-info-color !important;
             color: $psiphon-gray1 !important;
         }
@@ -87,13 +87,13 @@
         .hWFSra /* each item */ {
             color: $psiphon-text3 !important;
 
-            .jADFbf /* inner text */ {
-                color: inherit !important;
-            }
-
             &:hover {
                 background-color: $psiphon-info-color !important;
                 color: $psiphon-gray1 !important;
+            }
+
+            .jADFbf /* inner text */ {
+                color: inherit !important;
             }
         }
     }
@@ -148,10 +148,6 @@
 
     /* checkbox */
     .iVWXDg {
-        .bzvfYd span /* neutral */ {
-            color: $psiphon-gray3 !important;
-        }
-
         &:hover {
             cursor: pointer;
 
@@ -164,6 +160,10 @@
                     fill: $psiphon-gray1 !important;
                 }
             }
+        }
+
+        .bzvfYd span /* neutral */ {
+            color: $psiphon-gray3 !important;
         }
     }
 
@@ -191,14 +191,22 @@
     background-color: $psiphon-gray5 !important;
     color: $psiphon-gray1 !important;
 
-    .cmRPpI /* inner text */,
-    .hgVmZz /* inner text */,
-    button.RycQf /* close button */ {
-        color: inherit !important;
+    .sc-EHOje > button /* action */ {
+        background: transparent !important;
+        color: $psiphon-brand-color !important;
+    }
+    
+    .sc-htoDjs.dtfgd > span /* pop-up icons */ {
+        fill: $psiphon-gray5 !important;
     }
 
-    .dhpAMz button /* action button */ {
-        color: $psiphon-brand-color !important;
+    .sc-iwsKbI, /* pop up button */
+    .sc-dnqmqq {
+        color: $psiphon-gray1 !important;
+    }
+
+    .sc-VigVT /* inner text */ {
+        color: inherit !important;
     }
 }
 
