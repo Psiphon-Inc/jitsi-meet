@@ -194,7 +194,7 @@ $welcomePageWatermarkHeight: 128px;
  */
 $welcomePageDescriptionColor: #fff;
 $welcomePageFontFamily: inherit;
-$welcomePageBackground: url(../images/grafana-psiphon-login.png);
+$welcomePageBackground: url(../images/grafana-psiphon-login.png), #fff;
 $welcomePageBackgroundSmall: url(../images/grafana-psiphon-login-small.png);
 $welcomePageTitleColor: #fff;
 $welcomePageMediaBreakpointMedium: 768px;

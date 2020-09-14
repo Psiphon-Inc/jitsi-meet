@@ -68,9 +68,27 @@
             background-color: $psiphon-info-color !important;
             color: $psiphon-gray1 !important;
         }
+
+        /* clickable pop-up link */
+        &.eWLjXn /* neutral */,
+        &.cwHTLG /* hover */,
+        &.ljzeVp /* press */ {
+            .ghmfv /* link image */ {
+                color: $psiphon-brand-color !important;
+                fill: $psiphon-gray1 !important;
+            }
+            .cJcnUL /* link text hover */,
+            .gUxssc /* link text */ {
+                color: $psiphon-brand-color !important;
+            }
+        }
     }
 
     /* drop down list */
+    .hGkFQY /* link dropdown */ {
+        background-color: $psiphon-gray2 !important;
+        color: $psiphon-text3 !important;
+    }
     .cksvax {
         background-color: $psiphon-gray3 !important;
         border-color: $psiphon-gray1 !important;
@@ -210,6 +228,12 @@
     }
 }
 
+/* tooltips */
+.atlaskit-portal-container .irXsJ {
+    background-color: $psiphon-gray5 !important;
+    color: $psiphon-gray1 !important;
+}
+
 /**
  * Disable the slide-in animation for @atlaskit/flag due to the animation
  * repeating for each queued flag once it becomes the top flag.
@@ -243,6 +267,9 @@
  */
 .videocontainer .tOoji {
     background: none;
+}
+.tOoji #videospace {
+    background: #474747;
 }
 
 /**

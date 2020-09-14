@@ -31,10 +31,10 @@ class PageReloadOverlay extends AbstractPageReloadOverlay<Props> {
             <OverlayFrame isLightOverlay = { isNetworkFailure }>
                 <div className = 'inlay'>
                     <span
-                        className = 'reload_overlay_title'>
+                        className = 'reload_overlay_title reload_overlay'>
                         { t(title) }
                     </span>
-                    <span className = 'reload_overlay_text'>
+                    <span className = 'reload_overlay_text reload_overlay'>
                         { t(message, { seconds: timeLeft }) }
                     </span>
                     { this._renderProgressBar() }
