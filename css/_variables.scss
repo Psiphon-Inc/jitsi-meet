@@ -34,24 +34,6 @@ $presence-away: rgb(250, 201, 20);
 $presence-busy: rgb(233, 0, 27);
 $presence-idle: rgb(172, 172, 172);
 
-// Psiphon colors
-$psiphon-brand-color: #ff7941;
-$psiphon-brand-color-dark: #ed5700;
-$psiphon-gradient: linear-gradient($psiphon-brand-color 50%, $psiphon-brand-color-dark);
-$psiphon-info-color: #3274d9;
-$psiphon-info-color-dark: #1f60c4;
-$psiphon-gray1: #f7f8fa;
-$psiphon-gray2: #dde4ed;
-$psiphon-gray3: #d6d6d6;
-$psiphon-gray4: #9e9e9e;
-$psiphon-gray5: #52545c;
-$psiphon-gray-gradient: radial-gradient(50% 50% at 50% 50%, $psiphon-gray4 0%, $psiphon-gray5 100%), $psiphon-gray5;
-$psiphon-text1: #c7d0d9;
-$psiphon-text2: $psiphon-gray4;
-$psiphon-text3: #424345;
-$psiphon-text4: #1e2028;
-$psiphon-input: rgba(0, 0, 0, 0.6);
-
 /**
  * Toolbar
  */
