@@ -132,6 +132,25 @@
     font-size: $modalButtonFontSize;
 }
 
+#modal-dialog{
+    &-cancel-button {
+        color: $psiphon-text3 !important;
+
+        &:hover {
+            background-color: $psiphon-gray2 !important;
+        }
+    }
+
+    &-ok-button {
+        background-color: $psiphon-brand-color !important;
+        color: $psiphon-gray1 !important;
+
+        &:hover {
+            background-color: $psiphon-brand-color-dark !important;
+        }
+    }
+}
+
 /**
  * Styling inline dialog errors.
  */

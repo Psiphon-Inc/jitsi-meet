@@ -34,40 +34,52 @@
         }
     }
 
-    button.sc-chPdSV {
-        color: $psiphon-text3 !important;
-
-        /* button states */
-        &.fPYlda,
-        &.vvSok /* primary */ {
-            background-color: $psiphon-brand-color !important;
-            color: $psiphon-gray1 !important;
-        }
-        &.faSYQx /* hover */,
-        &.cBUoMS /* press */,
-        &.jFZPyt /* primary hover */,
-        &.kBTUIO /* primary press */ {
-            background-color: $psiphon-brand-color-dark !important;
-            color: $psiphon-gray1 !important;
-        }
-
-        &.gwSNcJ /* subtle hover */,
-        &.ghXWmQ /* press */ {
-            background-color: $psiphon-gray2 !important;
-        }
-
-        /* drop down button */
-        &.fCyuzu /* neutral, list collapsed */,
-        &.fVIYGn /* neutral, list open */ {
+    /* dropdowns */
+    div[class^='Droplist__Trigger'] {
+        button:not([class^='styled__Button']) { // only style triggers, not buttons
             background-color: $psiphon-gray3 !important;
+            color: $psiphon-text3 !important;
+
+            &:hover {
+                background-color: $psiphon-info-color !important;
+                color: $psiphon-gray1 !important;
+            }
         }
-        &.ikapcf /* hover, list collapsed */,
-        &.ivkQet /* press, list collapsed */,
-        &.fVhpUt /* hover, list open */,
-        &.ubgwW  /* press, list open */ {
-            background-color: $psiphon-info-color !important;
-            color: $psiphon-gray1 !important;
+    }
+    div[class^='Droplist__Content'] { // .cksvax
+        background-color: $psiphon-gray3 !important;
+
+        span { /* list items */
+            color: $psiphon-text3;
+
+            &[class^='Item-'] { // .hWFSra
+                background-color: $psiphon-gray3 !important;
+
+                &:hover {
+                    background-color: $psiphon-info-color !important;
+
+                    [class^='ItemParts__Content'] {
+                        color: $psiphon-gray1 !important;
+                    }
+                }
+            }
+
+            &[class^='Item__Span']:hover { /* group of items */
+                background-color: $psiphon-info-color !important;
+
+                span[class^='Item__Description'],
+                span[class^='Item__Content'] { // .jADFbf
+                    color: $psiphon-gray1 !important;
+                }
+            }
         }
+    }
+    .modal-dialog-form-error div[class^='styled__Container'] { /* list help item */ //.hGkFQY
+        background-color: $psiphon-gray3 !important;
+        color: $psiphon-text3 !important;
+    }
+
+    button.sc-chPdSV {
 
         /* clickable pop-up link */
         &.eWLjXn /* neutral */,
@@ -80,38 +92,6 @@
             .cJcnUL /* link text hover */,
             .gUxssc /* link text */ {
                 color: $psiphon-brand-color !important;
-            }
-        }
-    }
-
-    /* drop down list */
-    .hGkFQY /* link dropdown */ {
-        background-color: $psiphon-gray2 !important;
-        color: $psiphon-text3 !important;
-    }
-    .cksvax {
-        background-color: $psiphon-gray3 !important;
-        border-color: $psiphon-gray1 !important;
-
-        .jXQlZM /* each item */ {
-            background-color: $psiphon-gray3 !important;
-            color: $psiphon-text3 !important;
-
-            &:hover {
-                background-color: $psiphon-info-color !important;
-                color: $psiphon-gray1 !important;
-            }
-        }
-        .hWFSra /* each item */ {
-            color: $psiphon-text3 !important;
-
-            &:hover {
-                background-color: $psiphon-info-color !important;
-                color: $psiphon-gray1 !important;
-            }
-
-            .jADFbf /* inner text */ {
-                color: inherit !important;
             }
         }
     }
@@ -228,7 +208,7 @@
     }
 }
 
-/* tooltips */
+/* tooltips - FIX */
 .atlaskit-portal-container .irXsJ {
     background-color: $psiphon-gray5 !important;
     color: $psiphon-gray1 !important;
@@ -257,7 +237,7 @@
      * dropdown backgrounds clash with the modal backgrounds.
      */
     .cksvax[data-role=droplistContent] {
-        border: 1px solid #455166;
+        border: 1px solid $psiphon-gray1;
     }
 }
 

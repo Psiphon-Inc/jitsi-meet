@@ -20,8 +20,8 @@
 
         /* device-selector-trigger stylings attempt to mimic AtlasKit button */
         .device-selector-trigger {
-            background-color: $psiphon-gray1;
-            border: 1px solid $psiphon-gray2;
+            background-color: $psiphon-gray3;
+            border: 1px solid $psiphon-gray3; 
             border-radius: 5px;
             display: flex;
             height: 2.3em;
@@ -29,9 +29,15 @@
             line-height: 2.3em;
             overflow: hidden;
             padding: 0 8px;
+
+            &:hover {
+                background-color: $psiphon-info-color;
+                color: $psiphon-gray1;
+            }
         }
         .device-selector-trigger-disabled {
             .device-selector-trigger {
+                background-color: transparent;
                 color: $psiphon-gray4;
                 cursor: default;
             }
