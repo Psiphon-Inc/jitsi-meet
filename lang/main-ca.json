@@ -375,10 +375,10 @@
         "chooseCTA": "Trieu una opció de transmissió. Ara mateix teniu sessió iniciada com a {{email}}.",
         "enterStreamKey": "Introduïu la clau YouTube de transmissió en directe aquí.",
         "error": "La transmissió en directe ha fallat. Torneu-ho a intentar més tard.",
-        "errorAPI": "S'ha produït un error en accedir a les vostres emissions de Youtube. Torneu a iniciar sessió una altra vegada.",
+        "errorAPI": "S'ha produït un error en accedir a les vostres emissions de YouTube. Torneu a iniciar sessió una altra vegada.",
         "errorLiveStreamNotEnabled": "La transmissió en directe no està activada a ̣{{email}}. Activeu-la o inicieu sessió en un compte que tingui la transmissió en directe activada.",
         "expandedOff": "S'ha aturat la transmissió en directe",
-        "expandedOn": "Ara mateix, la reunió s'està transmetent a Youtube.",
+        "expandedOn": "Ara mateix, la reunió s'està transmetent a YouTube.",
         "expandedPending": "S'ha iniciat la transmissió en directe…",
         "failedToStart": "No s'ha pogut iniciar la transmissió en directe",
         "getStreamKeyManually": "No hem pogut obtenir cap transmissió en directe. Intenteu d'obtenir la clau de transmissió en directe del YouTube.",
@@ -397,7 +397,7 @@
         "streamIdHelp": "Què és això?",
         "unavailableTitle": "La transmissió en directe no és disponible",
         "googlePrivacyPolicy": "Política de privadesa de Google",
-        "youtubeTerms": "Condicions de servei del Youtube"
+        "youtubeTerms": "Condicions de servei del YouTube"
     },
     "localRecording": {
         "clientState": {

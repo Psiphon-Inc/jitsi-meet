@@ -70,20 +70,6 @@ class StreamKeyForm extends AbstractStreamKeyForm<Props> {
                             : null
                         }
                     </div>
-                    <a
-                        className = 'helper-link'
-                        href = { YOUTUBE_TERMS_URL }
-                        rel = 'noopener noreferrer'
-                        target = '_blank'>
-                        { t('liveStreaming.youtubeTerms') }
-                    </a>
-                    <a
-                        className = 'helper-link'
-                        href = { GOOGLE_PRIVACY_POLICY }
-                        rel = 'noopener noreferrer'
-                        target = '_blank'>
-                        { t('liveStreaming.googlePrivacyPolicy') }
-                    </a>
                 </div>
             </div>
         );

@@ -377,7 +377,7 @@
         "expandedOn": "Az értekezlet jelenleg közvetítve van a YouTube-on.",
         "expandedPending": "Az élvő közvetítés elindult…",
         "failedToStart": "Az élvő közvetítés indítása meghiúsult",
-        "getStreamKeyManually": "Nem lehet semmilyen élő közvetítést letölteni. Az élő közvetítéshez szükséges kulcsot a Youtube-tól lehet beszerezni.",
+        "getStreamKeyManually": "Nem lehet semmilyen élő közvetítést letölteni. Az élő közvetítéshez szükséges kulcsot a YouTube-tól lehet beszerezni.",
         "invalidStreamKey": "Az élő közvetítési kulcs valószínűleg hibás.",
         "off": "Élő közvetítés leállt",
         "offBy": "{{name}} leállította az élő közvetítést",
