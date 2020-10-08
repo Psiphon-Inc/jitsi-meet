@@ -32,14 +32,20 @@
 
             &:hover {
                 background-color: $psiphon-info-color;
+                border-color: $psiphon-info-color;
                 color: $psiphon-gray1;
             }
         }
         .device-selector-trigger-disabled {
             .device-selector-trigger {
                 background-color: transparent;
-                color: $psiphon-gray4;
+                border-color: $psiphon-gray4;
+                color: $psiphon-text-disabled;
                 cursor: default;
+
+                &:hover {
+                    border-color: inherit;
+                }
             }
         }
 

@@ -5,38 +5,58 @@
 .jIMojv{
     bottom: calc(#{$newToolbarSizeWithPadding}) !important;
 }
-
-/* TODO: remove!! Ideally we shouldn't have to manually override these colours */
-.eoRGoR {
+/**
+ * TODO: Remove, ideally we could inject css classes into the react components
+ * fix tooltips
+ */
+div[class^='Modal__Dialog'] {
     background-color: $psiphon-gray1 !important;
     color: $psiphon-text3 !important;
 
-    label span {
+    // text entry
+    label[class^='Label__LabelWrapper'] span {
         color: $psiphon-text3 !important;
     }
+    div[class^='Content__ChildWrapper'] {
+        & > div { // text entry box
+            background-color: transparent !important;
+            border-color: $psiphon-gray3 !important;
 
-    /* tab styling */
-    .bdCvri {
-        & > span {
-            background-color: $psiphon-text3 !important;
+            &:focus-within {
+                border-color: $psiphon-brand-color !important;
+            }
         }
 
-        & div {
+        input,
+        textarea {
             color: $psiphon-text3 !important;
         }
+    }
 
-        .iqNwPx /* active tab */ {
-            color: $psiphon-brand-color !important;
+    // dropdown items
+    div[class^='Droplist__Content'] span { 
+        color: $psiphon-text3 !important;
+        background-color: inherit !important;
 
-            & span {
-                background-color: $psiphon-brand-color !important;
+        &[class^='Item-']:hover { // single item
+            background-color: $psiphon-info-color !important;
+
+            [class^='ItemParts__Content'] {
+                color: $psiphon-gray1 !important;
+            }
+        }
+
+        &[class^='Item__Span']:hover { // group of items 
+            background-color: $psiphon-info-color !important;
+
+            span[class^='Item__Description'],
+            span[class^='Item__Content'] { // .jADFbf
+                color: $psiphon-gray1 !important;
             }
         }
     }
-
-    /* dropdowns */
     div[class^='Droplist__Trigger'] {
-        button:not([class^='styled__Button']) { // only style triggers, not buttons
+        button:not([class^='styled__Button']) { // only style dropdown triggers
             background-color: $psiphon-gray3 !important;
             color: $psiphon-text3 !important;
 
@@ -46,172 +66,91 @@
             }
         }
     }
-    div[class^='Droplist__Content'] { // .cksvax
-        background-color: $psiphon-gray3 !important;
+}
 
-        span { /* list items */
-            color: $psiphon-text3;
+.invite-more-dialog {
+    button > span[class^='Icon__'] {
+        color: $psiphon-gray1;
+    }
 
-            &[class^='Item-'] { // .hWFSra
-                background-color: $psiphon-gray3 !important;
+    div[class^='styledContainer'] > span {
+        background-color: $psiphon-input;
+        color: $psiphon-gray1;
+    }
+}
 
-                &:hover {
-                    background-color: $psiphon-info-color !important;
-
-                    [class^='ItemParts__Content'] {
-                        color: $psiphon-gray1 !important;
-                    }
-                }
-            }
-
-            &[class^='Item__Span']:hover { /* group of items */
-                background-color: $psiphon-info-color !important;
-
-                span[class^='Item__Description'],
-                span[class^='Item__Content'] { // .jADFbf
-                    color: $psiphon-gray1 !important;
-                }
-            }
+.modal-dialog-form-error {
+    button div[class^='styledInlineMessage'] { // error message
+        color: $psiphon-brand-color !important;
+        
+        span { // warning icon
+            color: inherit !important;
+            fill: $psiphon-gray1 !important;
         }
     }
-    .modal-dialog-form-error div[class^='styled__Container'] { /* list help item */ //.hGkFQY
+
+    div[class^='styled__Container'] { // list item help
         background-color: $psiphon-gray3 !important;
         color: $psiphon-text3 !important;
     }
+}
 
-    button.sc-chPdSV {
+.security-dialog {
+    // slider
+    div[class^='Slide-'] {
+        background-color: $psiphon-text3;
 
-        /* clickable pop-up link */
-        &.eWLjXn /* neutral */,
-        &.cwHTLG /* hover */,
-        &.ljzeVp /* press */ {
-            .ghmfv /* link image */ {
-                color: $psiphon-brand-color !important;
-                fill: $psiphon-gray1 !important;
-            }
-            .cJcnUL /* link text hover */,
-            .gUxssc /* link text */ {
-                color: $psiphon-brand-color !important;
-            }
+        [class^='IconWrapper-'] { // slider's inner icon
+            color: $psiphon-gray1;
+        }
+
+        &:hover {
+            background-color: $psiphon-gray4;
+            transition: background-color .3s ease-in;
         }
     }
+    
+    // slider knob  
+    span[class^='Handle-'] {
+        background-color: $psiphon-gray1;
+    }
+}
 
-    /* text entry */
-    .emyNPN {
-        input {
+
+// non hardcoded values:
+div[role="alert"] {
+    // maybe get rid of this? possibilities might be endless //prejoin, liveStreaming, recording, transcribing, videoSIPGW
+    //&[data-testid^='connection.'],
+    //&[data-testid^='dialog.'],
+    //&[data-testid^='deviceError.'],
+    //&[data-testid^='error.'],
+    //&[data-testid^='lobby.'],
+    //&[data-testid^='notify.'],
+    //&[data-testid^='toolbar.'] {
+        background-color: $psiphon-gray3 !important;
+        color: $psiphon-text3 !important;
+
+        button {
+            background-color: transparent;
+            color: $psiphon-info-color !important;
+        }
+
+        button svg {
+            fill: $psiphon-text3 !important;
+        }
+
+        div, span {
             color: $psiphon-text3 !important;
         }
 
-        .jsYMHu /* neutral */ {
-            background-color: transparent !important;
-            border-color: $psiphon-gray3 !important;
-        }
-        .dEUJGG /* focused */ {
-            background-color: transparent !important;
-            border-color: $psiphon-brand-color !important;
-        }
-    }
-    .dvocAg,
-    .exHNhk {
-        background-color: $psiphon-gray1 !important;
-        border-color: $psiphon-gray3 !important;
-        color: $psiphon-text3 !important;
-    }
-    .OZnnZ,
-    .hiHxeB {
-        background-color: $psiphon-gray1 !important;
-        border-color: $psiphon-gray3 !important;
-        color: $psiphon-text3 !important;
-
-        .gDgjow /* text widget inside the text entry */ {
-            background-color: $psiphon-input !important;
-            color: $psiphon-gray1 !important;
-
-            svg > path {
-                fill: $psiphon-gray1 !important;
-            }
-        }
-        .hmpyVI /* text widget inside the text entry, hover */ {
-            background-color: $psiphon-brand-color !important;
-            color: $psiphon-gray1 !important;
-
-            svg > path {
-                fill: $psiphon-gray1 !important;
-            }
-        }
-    }
-    .fHtceQ  {
-        color: $psiphon-text3 !important;
-    }
-
-    /* checkbox */
-    .iVWXDg {
-        &:hover {
-            cursor: pointer;
-
-            .bzvfYd span {
-                color: $psiphon-info-color !important;
-
-                &.daPWMQ svg,
-                &.bINed svg,
-                &.lrBnp svg /* the checkmark */ {
-                    fill: $psiphon-gray1 !important;
-                }
-            }
+        button span[class^='css-'] {
+            color: $psiphon-info-color !important;
         }
 
-        .bzvfYd span /* neutral */ {
-            color: $psiphon-gray3 !important;
+        svg {
+            fill: $psiphon-gray3 !important;
         }
-    }
-
-    /* slider */
-    .gCUVAL {
-        .jieXsu /* span unfocused, off */,
-        .ioMZrV /* span focused, off */ {
-            background-color: $psiphon-gray3 !important;
-    
-        }
-        .gaHGzX /* span unfocused, on */,
-        .ixjmHg /* span focused, on */ {
-            background-color: $psiphon-brand-color !important;
-        }
-
-        .hzRJjY /* knob, off */,
-        .glFAYm /* knob, on */ {
-            background-color: $psiphon-gray1 !important;
-        }
-    }
-}
-
-/* chat pop ups */
-.sc-bZQynM {
-    background-color: $psiphon-gray5 !important;
-    color: $psiphon-gray1 !important;
-
-    .sc-EHOje > button /* action */ {
-        background: transparent !important;
-        color: $psiphon-brand-color !important;
-    }
-    
-    .sc-htoDjs.dtfgd > span /* pop-up icons */ {
-        fill: $psiphon-gray5 !important;
-    }
-
-    .sc-iwsKbI, /* pop up button */
-    .sc-dnqmqq {
-        color: $psiphon-gray1 !important;
-    }
-
-    .sc-VigVT /* inner text */ {
-        color: inherit !important;
-    }
-}
-
-/* tooltips - FIX */
-.atlaskit-portal-container .irXsJ {
-    background-color: $psiphon-gray5 !important;
-    color: $psiphon-gray1 !important;
+    //}
 }
 
 /**
@@ -237,6 +176,7 @@
      * dropdown backgrounds clash with the modal backgrounds.
      */
     .cksvax[data-role=droplistContent] {
+        background-color: $psiphon-gray3;
         border: 1px solid $psiphon-gray1;
     }
 }

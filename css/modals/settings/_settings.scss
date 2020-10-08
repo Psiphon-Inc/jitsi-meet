@@ -1,3 +1,42 @@
+.settings-dialog {
+    color: $psiphon-text3;
+
+    /* atlaskit tab selectors */
+    span[class^='styled__NavLine'] {
+        background-color: $psiphon-text3;
+    }
+    div[class^='styled__NavItem'] {
+        &[aria-selected="true"] { // active tab
+            color: $psiphon-brand-color;
+
+            span[class^='styled__NavLine'] {
+                background-color: $psiphon-brand-color;
+            }
+        }
+        &[aria-selected='false'] { // inactive tab
+            color: $psiphon-text3;
+        }
+    }
+}
+
+.settings-pane .settings-sub-pane {
+    label {
+        color: $psiphon-text3;
+
+        span[class^='Checkbox__IconWrapper'] {
+            color: $psiphon-gray3;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            span[class^='Checkbox__IconWrapper'] {
+                color: $psiphon-text1;
+            }
+        }
+    }
+}
+
 .settings-pane {
     display: flex;
     width: 100%;

@@ -18,7 +18,7 @@
     @include transition(background-color .1s ease-out);
 
     &[disabled] {
-        color: #666;
+        color: $psiphon-text-disabled;
         cursor: default;
     }
 
@@ -59,12 +59,12 @@
 
     &_overlay {
         color: $primaryButtonColor;
-        background-color: $overlayButtonBg;
+        background-color: $primaryButtonBackground;
         border-radius: 2px;
         border: none;
 
         &:hover {
-            background-color: $primaryButtonBackground;
+            background-color: $primaryButtonHoverBackground;
             border: none;
         }
     }

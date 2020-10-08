@@ -36,24 +36,19 @@
         display: block;
     }
 
-    a:link {
-        color: rgb(184, 184, 184);
-    }
-
+    // fix these colours for chat message, remote, and private
+    a:hover,
+    a:link,
     a:visited {
         color: white;
     }
 
-    a:hover {
-        color: rgb(213, 213, 213);
-    }
-
     a:active {
-        color: black;
+        color: $psiphon-info-color-dark;
     }
 
     &::-webkit-scrollbar {
-        background: #06a5df;
+        background: $psiphon-gray2;
         width: 7px;
     }
 
@@ -62,15 +57,15 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: black;
+        background: $newToolbarBackgroundColor;
     }
 
     &::-webkit-scrollbar-track-piece {
-        background: black;
+        background: $newToolbarBackgroundColor;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #06a5df;
+        background: $psiphon-gray2;
         border-radius: 4px;
     }
 }
